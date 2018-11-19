@@ -1,5 +1,5 @@
 plugins:
-  hemanik/prow-test:
+  paulbhart/prow-test:
   - size
   - cat
   - dog
