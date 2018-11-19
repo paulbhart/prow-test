@@ -1,5 +1,5 @@
 presubmits:
-  hemanik/prow-test:
+  paulbhart/prow-test:
   - name: unit-tests         # Names need not be unique.
     always_run: true         # Run for every PR, or only when requested.
     skip_report: false       # Whether to skip setting a status on GitHub.
