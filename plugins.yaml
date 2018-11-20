@@ -1,6 +1,7 @@
 plugins:
-   paulbhart/prow-test:
-      - size
-      - trigger
-      - cat
-      - dog
+  paulbhart/prow-test:
+  - size
+  - cat
+  - dog
+  - trigger
+  - golint
