@@ -1,15 +1,10 @@
 presubmits:
   paulbhart/prow-test:
-  - name: unit-tests         # Names need not be unique.
+  - name: test-presubmit
     decorate: true
-    always_run: false         # Run for every PR, or only when requested.
-    skip_report: true       # Whether to skip setting a status on GitHub.
-    context: unit-tests      # Status context. Usually the job name.
-    max_concurrency: 10      # Run no more than this number concurrently.
-    agent: kubernetes        
-    spec:                    # Valid Kubernetes PodSpec. 
+    always_run: true
+    skip_report: true
+    spec:
       containers:
       - image: alpine
-        command:
-        - printenv
-    
+        command: ["/bin/printenv"]
