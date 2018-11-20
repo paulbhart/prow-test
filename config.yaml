@@ -18,14 +18,6 @@ postsubmits:
   paulbhart/prow-test:
   - name: test-postsubmit
     decorate: true
-    spec:
-      containers:
-      - image: alpine
-        command: ["/bin/printenv"]
-presubmits:
-  paulbhart/prow-test:
-  - name: test-presubmit
-    decorate: true
     always_run: true
     skip_report: true
     spec:
