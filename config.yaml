@@ -22,7 +22,7 @@ postsubmits:
     skip_report: false
     spec:
       containers:
-      - image: bazel 
+      - image: l.gcr.io/google/bazel:0.17.1 
         args: ["test","//..."]
 
 
