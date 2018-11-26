@@ -25,5 +25,5 @@ presubmits:
       containers:
       - image: alpine
         command: ["/bin/printenv"]         
-     trigger: "(?m)^/test this"
-     rerun_command: "/test this"
+    trigger: "(?m)^/test this"
+    rerun_command: "/test this"
