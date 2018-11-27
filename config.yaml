@@ -1,7 +1,13 @@
+periodics:
+- interval: 10m
+  name: echo-test
+  spec:
+    containers:
+    - image: alpine
+      command: ["/bin/date"]
 postsubmits:
   paulbhart/prow-test:
   - name: test-postsubmit
-    decorate: true
     spec:
       containers:
       - image: alpine
@@ -9,7 +15,6 @@ postsubmits:
 presubmits:
   paulbhart/prow-test:
   - name: test-presubmit
-    decorate: true
     always_run: true
     skip_report: true
     spec:
